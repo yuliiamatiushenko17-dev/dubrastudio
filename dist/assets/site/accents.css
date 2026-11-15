@@ -1,0 +1,132 @@
+.consultation-button.btn-pill-primary,
+.hero .consultation-button,
+.inner-page .btn-pill-primary {
+  background:var(--cursor-accent);
+  border:1px solid var(--cursor-accent);
+  color:var(--ink);
+  font:500 12px/1.6 'Barlow', sans-serif;
+  letter-spacing:.16em;
+  transition:background .3s, color .3s, border-color .3s;
+}
+
+.consultation-button.btn-pill-primary:is(:hover, :focus-visible),
+.hero .consultation-button:is(:hover, :focus-visible),
+.inner-page .btn-pill-primary:is(:hover, :focus-visible) {
+  background:#fff;
+}
+
+:is(nav .nav-logo, footer .footer-brand) > span,
+footer .footer-top .footer-col-title,
+footer .footer-bottom > span:first-child,
+.inner-page :is(h1, .page-section > h2, .service-row h2, .process-stage h2, .inner-cta h2, .studio-numbers strong) {
+  color:var(--cursor-accent);
+}
+
+.inner-page :is(.link-text, .page-line-link, .project-next > a) {
+  color:var(--cursor-accent);
+  border-bottom:1px solid currentColor;
+}
+
+.inner-page :is(.page-line-link, .project-next > a) { align-items:center; }
+
+/* Shared circular arrow controls on cards, links and image comparisons. */
+:is(.categories-grid .category-card .category-content .category-arrow,
+    .testimonials .review-expand.category-arrow, .step-link,
+    .test-controls :is(.test-prev, .test-next), .work-open,
+    .inner-page .project-comparison .comparison-view, .page-arrow,
+    .inner-page .project-comparison .comparison-divider > span) {
+  box-sizing:border-box;
+  width:34px;
+  height:34px;
+  flex:0 0 34px;
+  padding:0;
+  display:grid;
+  place-items:center;
+  border:1px solid var(--cursor-accent);
+  border-radius:50%;
+  background:var(--cursor-accent);
+  color:#000;
+  transition:background .25s, color .25s, border-color .25s;
+}
+
+.inner-page :is(.work-open, .comparison-view, .page-arrow) svg,
+.test-controls :is(.test-prev, .test-next) svg {
+  width:14px;
+  height:14px;
+  pointer-events:none;
+}
+
+:is(.categories-grid .category-card .category-content .category-arrow,
+    .testimonials .review-expand.category-arrow, .step-link,
+    .test-controls :is(.test-prev, .test-next), .work-open,
+    .inner-page .project-comparison .comparison-view, .page-arrow):is(:hover, :focus-visible),
+:is(.work-link, .page-line-link, .project-next > a):focus-visible :is(.work-open, .page-arrow),
+.inner-page .project-comparison.is-handle-hovered .comparison-divider > span,
+.inner-page .project-comparison .comparison-range:is(:focus-visible, :active) + .comparison-divider > span {
+  background:#fff;
+  border-color:#fff;
+  color:#000;
+}
+
+.inner-page .work-filters button[aria-pressed="true"] {
+  background:var(--cursor-accent);
+  border-color:var(--cursor-accent);
+  color:var(--ink);
+  box-shadow:none;
+}
+
+.inner-page .work-filters button[aria-pressed="false"]:is(:hover, :focus-visible) {
+  background:#fff;
+  border-color:var(--cursor-accent);
+  color:var(--ink);
+}
+
+.inner-page :is(.page-jump, .process-stage, .studio-numbers, .values-grid article) {
+  border-color:var(--cursor-accent);
+}
+
+.inner-page .contact-grid :is(input, select, textarea):focus {
+  outline-color:var(--cursor-accent);
+}
+
+.inner-page nav .nav-links a:is([aria-current="page"], :hover, :focus-visible) {
+  color:var(--cursor-accent);
+  opacity:1;
+}
+
+@media (min-width:701px) {
+  .inner-page nav { gap:16px; }
+  .inner-page nav .nav-links { display:contents; }
+}
+
+@media (max-width:700px) {
+  .inner-page .btn-pill-primary { padding:12px 16px; font-size:11px; }
+}
+.awaiting-project-photo img { clip-path:inset(100% 0 0); }
+
+.footer-heading-swap { display:inline-grid; vertical-align:baseline; }
+.footer-heading-swap > span { grid-area:1/1; }
+.footer-heading-swap .footer-heading-plus {
+  align-self:center;
+  color:var(--cursor-accent);
+  font:600 22px/0 Barlow, sans-serif;
+  letter-spacing:0;
+  opacity:0;
+}
+
+
+.inner-cta-word { display:inline-block; }
+.has-motion-line { position:relative; border-top:0; }
+.inner-cta-motion-line {
+  position:absolute;
+  inset:0 0 auto;
+  height:3px;
+  background:var(--cursor-accent);
+  pointer-events:none;
+}
+.inner-page .work-toolbar { border-top-color:transparent; }
+
+/* Align footer headings with the studio wordmark. */
+footer .footer-top .footer-col-title {
+  font-size:15px;
+}

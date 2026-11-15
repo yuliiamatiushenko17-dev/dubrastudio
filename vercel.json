@@ -1,0 +1,24 @@
+{
+  "buildCommand": "",
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "value": "noindex",
+          "key": "X-Robots-Tag"
+        },
+        {
+          "value": "nosniff",
+          "key": "X-Content-Type-Options"
+        },
+        {
+          "value": "strict-origin-when-cross-origin",
+          "key": "Referrer-Policy"
+        }
+      ]
+    }
+  ],
+  "outputDirectory": "dist",
+  "framework": null
+}

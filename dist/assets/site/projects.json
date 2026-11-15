@@ -1,0 +1,613 @@
+[
+  {
+    "slug": "vinohrady-kitchen",
+    "type": "kitchens",
+    "category": "Kitchens",
+    "location": "Praha · Vinohrady",
+    "summary": "A kitchen shaped around everyday life in a Prague apartment.",
+    "statement": "A place for cooking, gathering and the small routines of home.",
+    "paragraph1": "We approach the kitchen as part of the whole apartment: considering movement, storage and the relationship between the working area and the rest of the room.",
+    "paragraph2": "Cabinet proportions, worktop space and appliance positions are considered together. The finished palette is selected with the client, from the first samples to the final hardware.",
+    "title": "Vinohrady Kitchen",
+    "image": "https://res.cloudinary.com/t2mat0fm/image/upload/v1794241140/Bespoke_kitchen_in_Prague_apartment_0b195e62_2K.webp",
+    "design_details": [
+      {
+        "title": "Framed cabinetry",
+        "description": "Walnut-toned fronts create a continuous furniture wall. The framed doors and long brass-coloured pulls give the composition its rhythm."
+      },
+      {
+        "title": "Stone island",
+        "description": "A pale, softly rounded worktop brings the preparation area into the centre of the room. The curved ends soften the passage around the island."
+      },
+      {
+        "title": "Cooking niche",
+        "description": "The light stone recess creates a distinct cooking area within the darker cabinetry. Worktop, splashback and hood are read as one composition."
+      },
+      {
+        "title": "Suggested palette",
+        "description": "Walnut brown · warm ivory · pale stone · brushed brass"
+      }
+    ],
+    "photographic_specification": {
+      "finishes": [
+        [
+          "Timber fronts",
+          "Visible wood grain on the framed doors",
+          0.81,
+          0.41,
+          9
+        ],
+        [
+          "Sink & mixer finish",
+          "Muted metal tone sampled from the mixer",
+          0.454,
+          0.555,
+          40
+        ],
+        [
+          "Island fronts",
+          "Smooth grey-beige cabinet finish",
+          0.51,
+          0.76,
+          10
+        ],
+        [
+          "Cooking-niche surface",
+          "Actual light surface behind the hob",
+          0.59,
+          0.47,
+          10
+        ]
+      ],
+      "fittings": [
+        [
+          "Dark door pulls",
+          "Photographic detail of the tall cabinet handles",
+          0.29,
+          0.526,
+          8
+        ],
+        [
+          "Sink mixer",
+          "The actual upright mixer on the island",
+          0.452,
+          0.55,
+          7.5
+        ],
+        [
+          "Cooking zone",
+          "Hob and controls within the recess",
+          0.565,
+          0.535,
+          5.5
+        ],
+        [
+          "Pendant lighting",
+          "The paired shades over the island",
+          0.54,
+          0.29,
+          3.7
+        ]
+      ]
+    },
+    "sampled_palette": [
+      "#533119",
+      "#75624e",
+      "#766453",
+      "#a89680"
+    ],
+    "finish_display_overrides": {
+      "second": "metal sample",
+      "third": "solid grey-beige"
+    }
+  },
+  {
+    "slug": "smichov-wardrobe",
+    "type": "wardrobes",
+    "category": "Wardrobes",
+    "location": "Praha · Smíchov",
+    "summary": "Made-to-measure storage that belongs to the room.",
+    "statement": "A quieter room begins with a place for everything.",
+    "paragraph1": "A wardrobe should work with the architecture rather than feel like an addition. The design considers the room’s proportions, door clearances and the way storage is used each day.",
+    "paragraph2": "Inside, hanging space, shelving and drawers can be arranged around personal routines. Fronts, handles and finishes are selected as one coherent composition.",
+    "title": "Smíchov Wardrobe",
+    "image": "https://res.cloudinary.com/t2mat0fm/image/upload/v1794241140/Bespoke_wardrobe_in_historic_bed__b3a4dd0b_2K.webp",
+    "design_details": [
+      {
+        "title": "Architectural fronts",
+        "description": "Tall, warm greige doors echo the room’s classical proportions. Repeated arched panels give the full-height wardrobe a quiet decorative structure."
+      },
+      {
+        "title": "Cornice & plinth",
+        "description": "The upper cornice and recessed base help the joinery read as part of the architecture. Their proportions are developed with the surrounding mouldings."
+      },
+      {
+        "title": "Handles & storage",
+        "description": "Paired brass-coloured pulls define the opening points. The internal arrangement can combine hanging space, adjustable shelves and drawers."
+      },
+      {
+        "title": "Suggested palette",
+        "description": "Warm greige · brushed brass · natural parquet · soft ivory"
+      }
+    ],
+    "photographic_specification": {
+      "finishes": [
+        [
+          "Greige fronts",
+          "Painted panel surface from the wardrobe",
+          0.88,
+          0.45,
+          9
+        ],
+        [
+          "Handle finish",
+          "Close view of the visible metal handles",
+          0.838,
+          0.598,
+          12
+        ],
+        [
+          "Timber floor",
+          "Existing parquet in the project image",
+          0.91,
+          0.88,
+          7
+        ],
+        [
+          "Light textile",
+          "A fabric tone from the surrounding room",
+          0.24,
+          0.68,
+          9
+        ]
+      ],
+      "fittings": [
+        [
+          "Paired pulls",
+          "The handles shown on the wardrobe doors",
+          0.838,
+          0.598,
+          8
+        ],
+        [
+          "Arched door panels",
+          "The actual moulded profile of the fronts",
+          0.61,
+          0.39,
+          4.5
+        ],
+        [
+          "Upper cornice",
+          "The wardrobe’s visible upper finishing profile",
+          0.85,
+          0.245,
+          5.5
+        ],
+        [
+          "Plinth detail",
+          "The cabinetry meets the existing floor",
+          0.89,
+          0.767,
+          6
+        ]
+      ]
+    },
+    "sampled_palette": [
+      "#685744",
+      "#645244",
+      "#ac8867",
+      "#685744"
+    ],
+    "finish_display_overrides": {
+      "third": {
+        "label": "Interior timber option",
+        "status": "suggested, not visible in the wardrobe photo",
+        "sample_source": "brno-kitchen.webp"
+      },
+      "fourth": {
+        "label": "Cornice & profile",
+        "sample_source": "smichov-wardrobe.webp"
+      }
+    }
+  },
+  {
+    "slug": "zizkov-kitchen",
+    "type": "kitchens",
+    "category": "Kitchens",
+    "location": "Praha · Žižkov",
+    "summary": "A considered kitchen with space to cook and gather.",
+    "statement": "Practical details, brought together in one clear composition.",
+    "paragraph1": "The starting point is how people move through the room: preparing food, sharing a meal and moving between the kitchen and the living space.",
+    "paragraph2": "Storage and work surfaces are planned together with lighting and appliance integration. Material choices are developed through samples and a detailed proposal.",
+    "title": "Žižkov Kitchen",
+    "image": "https://res.cloudinary.com/t2mat0fm/image/upload/v1794241142/Luxury_kitchen_interior_design_c__d7629170_2K.webp",
+    "design_details": [
+      {
+        "title": "Flat-front cabinetry",
+        "description": "Muted plum fronts give the kitchen a deep, restrained colour. Flat panels and narrow shadow gaps keep the cabinet composition clear."
+      },
+      {
+        "title": "Stone island",
+        "description": "A pale stone-toned island combines the working surface with a place to gather. Its waterfall sides and curved edge are explored in the detail studies."
+      },
+      {
+        "title": "Backsplash & lighting",
+        "description": "A brushed-metal splashback reflects the room’s daylight. The slim linear pendant creates a second horizontal line over the island."
+      },
+      {
+        "title": "Suggested palette",
+        "description": "Muted plum · pale stone · brushed steel · warm white"
+      }
+    ],
+    "photographic_specification": {
+      "finishes": [
+        [
+          "Muted plum fronts",
+          "Flat cabinet finish from the rear run",
+          0.22,
+          0.63,
+          9
+        ],
+        [
+          "Pale island surface",
+          "Actual texture on the island’s side",
+          0.412,
+          0.73,
+          9
+        ],
+        [
+          "Metal backsplash",
+          "The reflective finish behind the worktop",
+          0.28,
+          0.5,
+          8
+        ],
+        [
+          "Stool frame",
+          "Visible metal tubing in the seating",
+          0.77,
+          0.731,
+          9
+        ]
+      ],
+      "fittings": [
+        [
+          "Sink mixer",
+          "Photographic detail of the mixer",
+          0.647,
+          0.538,
+          7.5
+        ],
+        [
+          "Drawer reveals",
+          "Fine opening lines between the flat fronts",
+          0.258,
+          0.62,
+          6
+        ],
+        [
+          "Integrated oven",
+          "The built-in appliance in the tall cabinet",
+          0.51,
+          0.477,
+          6
+        ],
+        [
+          "Linear pendant",
+          "The light fitting above the island",
+          0.59,
+          0.326,
+          4.5
+        ]
+      ]
+    },
+    "sampled_palette": [
+      "#433434",
+      "#695d4e",
+      "#ebeae6",
+      "#aaa9a0"
+    ],
+    "finish_display_overrides": {
+      "first": "solid muted plum",
+      "second": "clean photographic stone texture",
+      "third": "metal backsplash sample",
+      "fourth": "sink and mixer metal, not stool frame"
+    }
+  },
+  {
+    "slug": "holesovice-library",
+    "type": "other",
+    "category": "Other furniture",
+    "location": "Praha · Holešovice",
+    "summary": "A fitted library for books, objects and everyday living.",
+    "statement": "Storage that gives the room its rhythm.",
+    "paragraph1": "The library combines practical storage with space to display books and objects. Its proportions are considered in relation to the surrounding room and the furniture within it.",
+    "paragraph2": "Shelf spacing, closed storage and display areas are developed around what needs to be kept. Finish samples help establish the right relationship between the joinery and the interior.",
+    "title": "Holešovice Library",
+    "image": "https://res.cloudinary.com/t2mat0fm/image/upload/v1794241143/Designing_luxury_residential_lib__cd5ee718_2K.webp",
+    "design_details": [
+      {
+        "title": "Library framework",
+        "description": "Dark timber-toned shelving follows the room’s height. Vertical pilasters and a continuous cornice organise the wall into distinct bays."
+      },
+      {
+        "title": "Open & closed storage",
+        "description": "The open shelves display books and objects, while the lower cabinets conceal everyday storage. Their lines align within the same framework."
+      },
+      {
+        "title": "Joinery details",
+        "description": "Shelf divisions, door panels and brass-coloured pulls are developed as one family of details. The close-ups explore their visual relationships."
+      },
+      {
+        "title": "Suggested palette",
+        "description": "Dark-stained timber · aged brass · warm plaster · beige textile"
+      }
+    ],
+    "photographic_specification": {
+      "finishes": [
+        [
+          "Dark timber",
+          "Actual grain from the library doors",
+          0.9,
+          0.72,
+          9
+        ],
+        [
+          "Shelf finish",
+          "The surface of the dark timber framework",
+          0.8,
+          0.4,
+          9
+        ],
+        [
+          "Warm plaster",
+          "Existing wall finish beside the library",
+          0.3,
+          0.28,
+          8
+        ],
+        [
+          "Beige upholstery",
+          "A seating fabric from the room",
+          0.59,
+          0.73,
+          9
+        ]
+      ],
+      "fittings": [
+        [
+          "Cabinet pulls",
+          "The visible opening points of the lower doors",
+          0.943,
+          0.765,
+          9
+        ],
+        [
+          "Shelf junction",
+          "Actual shelves, dividers and backing",
+          0.76,
+          0.45,
+          5
+        ],
+        [
+          "Panelled doors",
+          "Close view of the lower cabinet profiles",
+          0.89,
+          0.8,
+          5.5
+        ],
+        [
+          "Library cornice",
+          "The upper moulding of the timber framework",
+          0.81,
+          0.14,
+          7
+        ]
+      ]
+    },
+    "sampled_palette": [
+      "#36312e",
+      "#897653"
+    ],
+    "finish_display_overrides": [
+      "Dark timber finish: clean door grain sample",
+      "Handle metal finish: warm antique metal swatch"
+    ]
+  },
+  {
+    "slug": "brno-kitchen",
+    "type": "kitchens",
+    "category": "Kitchens",
+    "location": "Brno",
+    "summary": "A bespoke kitchen designed as part of an open living space.",
+    "statement": "One room, with space for different ways of living.",
+    "paragraph1": "The kitchen is considered together with its surrounding space. Working areas, circulation and the view from the living room all inform the arrangement.",
+    "paragraph2": "Cabinetry, worktops and integrated storage are developed as a whole. The final materials and fittings are specified individually during the design process.",
+    "title": "Brno Kitchen",
+    "image": "https://res.cloudinary.com/t2mat0fm/image/upload/v1794241139/Designing_luxury_kitchen_interior_b5f9209a_2K.webp",
+    "design_details": [
+      {
+        "title": "Oak-toned island",
+        "description": "Horizontal timber grain and broad drawer fronts establish the island’s calm character. The light worktop rounds around the end of the cabinetry."
+      },
+      {
+        "title": "Tall appliance bank",
+        "description": "The darker full-height cabinets frame an open coffee niche. Concealed warm lighting separates the working recess from the surrounding doors."
+      },
+      {
+        "title": "Everyday working space",
+        "description": "The island and window-side run provide complementary work surfaces. Narrow reveals and restrained hardware keep the focus on the materials."
+      },
+      {
+        "title": "Suggested palette",
+        "description": "Light oak · warm stone · charcoal timber · taupe · warm LED"
+      }
+    ],
+    "photographic_specification": {
+      "finishes": [
+        [
+          "Light timber fronts",
+          "Visible horizontal grain on the island",
+          0.44,
+          0.69,
+          8
+        ],
+        [
+          "Worktop surface",
+          "Actual pale surface on the island",
+          0.55,
+          0.58,
+          10
+        ],
+        [
+          "Dark tall fronts",
+          "The finish around the appliance niche",
+          0.87,
+          0.55,
+          8
+        ],
+        [
+          "Taupe base fronts",
+          "Cabinet finish beneath the window",
+          0.23,
+          0.62,
+          11
+        ]
+      ],
+      "fittings": [
+        [
+          "Window-side mixer",
+          "The mixer visible along the window run",
+          0.36,
+          0.51,
+          8
+        ],
+        [
+          "Island drawers",
+          "Drawer fronts and opening gaps from the photo",
+          0.53,
+          0.7,
+          4
+        ],
+        [
+          "Coffee niche",
+          "The actual appliance recess and shelves",
+          0.825,
+          0.45,
+          4.2
+        ],
+        [
+          "Niche lighting",
+          "Warm lighting beneath the upper niche shelf",
+          0.82,
+          0.397,
+          6
+        ]
+      ]
+    },
+    "sampled_palette": [
+      "#ab8768",
+      "#685743",
+      "#39332b",
+      "#796953"
+    ]
+  },
+  {
+    "slug": "dejvice-study",
+    "type": "other",
+    "category": "Other furniture",
+    "location": "Praha · Dejvice",
+    "summary": "A personal space for focused work and a growing collection.",
+    "statement": "A room to think, read and make space for ideas.",
+    "paragraph1": "A home study needs to balance a useful working surface with storage and a sense of calm. The design considers daylight, circulation and the relationship between open and closed shelving.",
+    "paragraph2": "Storage dimensions and the working layout are tailored to the room. Finishes and details are chosen through the same sample-led process as every made-to-measure piece.",
+    "title": "Dejvice Study",
+    "image": "https://res.cloudinary.com/t2mat0fm/image/upload/v1794241144/Luxury_home_study_interior_design_21acb466_2K.webp",
+    "design_details": [
+      {
+        "title": "Built-in composition",
+        "description": "Walnut-toned tall cabinets frame a pale working surface. Open shelves and a glazed display cabinet keep the centre of the composition visually light."
+      },
+      {
+        "title": "Illuminated shelves",
+        "description": "Warm concealed lighting beneath the shelves brings focus to the desk and displayed objects. The cutaway study explores a recessed LED position."
+      },
+      {
+        "title": "Desk & drawers",
+        "description": "A slim drawer unit sits below the continuous top. The relationship between desk edge, drawer fronts and neighbouring cabinets is developed together."
+      },
+      {
+        "title": "Suggested palette",
+        "description": "Walnut brown · pale stone · warm grey · dark leather · warm LED"
+      }
+    ],
+    "photographic_specification": {
+      "finishes": [
+        [
+          "Timber cabinetry",
+          "Wood grain taken from the tall cabinet",
+          0.17,
+          0.54,
+          9
+        ],
+        [
+          "Pale desktop",
+          "The actual surface of the working top",
+          0.53,
+          0.624,
+          11
+        ],
+        [
+          "Grey back panel",
+          "Visible finish behind the shelves",
+          0.44,
+          0.484,
+          8
+        ],
+        [
+          "Glazed cabinet",
+          "Glass and timber framing from the display unit",
+          0.605,
+          0.348,
+          7
+        ]
+      ],
+      "fittings": [
+        [
+          "Integrated pull",
+          "The recessed opening in the tall front",
+          0.248,
+          0.615,
+          9
+        ],
+        [
+          "Shelf lighting",
+          "The actual illuminated shelf edge",
+          0.46,
+          0.405,
+          6
+        ],
+        [
+          "Glazed display",
+          "Cabinet framing, glass and shelves",
+          0.6,
+          0.31,
+          4
+        ],
+        [
+          "Desk drawers",
+          "The drawer unit below the working surface",
+          0.47,
+          0.674,
+          5.5
+        ]
+      ]
+    },
+    "sampled_palette": [
+      "#7a5944",
+      "#aea092",
+      "#b0a59c",
+      "#1e1309"
+    ]
+  }
+]

@@ -1,0 +1,49 @@
+.mobile-menu-toggle { display: none; }
+@media (max-width: 900px) {
+  .mobile-menu-toggle {
+    display: grid;
+    place-content: center;
+    gap: 4px;
+    flex: 0 0 44px;
+    height: 44px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: var(--ink, #111010);
+  }
+  .mobile-menu-toggle span {
+    width: 20px;
+    height: 1px;
+    background: currentColor;
+  }
+  .mobile-menu-toggle[aria-expanded="true"] span:first-child { transform: translateY(5px) rotate(45deg); }
+  .mobile-menu-toggle[aria-expanded="true"] span:nth-child(2) { visibility: hidden; }
+  .mobile-menu-toggle[aria-expanded="true"] span:last-child { transform: translateY(-5px) rotate(-45deg); }
+  nav .lang-toggle { margin-inline-start: auto; }
+  html body nav .nav-links:not(.mobile-menu-open) { display: none; }
+  html body nav .nav-links.mobile-menu-open {
+    display: grid;
+    position: absolute;
+    inset: 100% 0 auto;
+    margin: 0;
+    padding: 8px 24px 18px;
+    gap: 0;
+    max-height: 70dvh;
+    overflow: auto;
+    background: var(--bg, #f3f0eb);
+    border-bottom: 1px solid #11101022;
+  }
+  nav .nav-links.mobile-menu-open a {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    color: var(--ink, #111010);
+    opacity: 1;
+  }
+  main .inner-cta > .btn-pill-primary,
+  .cta-banner > .btn-pill-primary {
+    align-self: center;
+    margin-inline: auto;
+    max-width: 100%;
+  }
+}
