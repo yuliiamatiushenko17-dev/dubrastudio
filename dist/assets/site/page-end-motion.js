@@ -397,8 +397,8 @@
     cta.prepend(line);
     cta.classList.add('has-motion-line');
     queue(line, [
-      { clipPath:'inset(0 100% 2px 0)' },
-      { clipPath:'inset(0 0 2px 0)', offset:.78 },
+      { clipPath:'inset(0 100% 0 0)' },
+      { clipPath:'inset(0)', offset:.78 },
       { clipPath:'inset(0)' }
     ], delay, 800, group);
   }

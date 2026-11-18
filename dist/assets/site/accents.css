@@ -120,8 +120,8 @@ footer .footer-bottom > span:first-child,
 .inner-cta-motion-line {
   position:absolute;
   inset:0 0 auto;
-  height:3px;
-  background:var(--cursor-accent);
+  height:1px;
+  background:var(--strong-rule);
   pointer-events:none;
 }
 .inner-page .work-toolbar { border-top-color:transparent; }
@@ -129,4 +129,81 @@ footer .footer-bottom > span:first-child,
 /* Align footer headings with the studio wordmark. */
 footer .footer-top .footer-col-title {
   font-size:15px;
+}
+
+/* Keep the accent on actions and the brand. Use neutral rules for structure. */
+:root {
+  --section-rule: rgba(24, 22, 20, .24);
+  --strong-rule: #808080;
+  --heading-weight: 500;
+}
+body :is(h1, h2, h3),
+:is(.section-title, .test-title, .process-title, .step-title, .cta-banner .cta-text) {
+  font-weight:var(--heading-weight);
+}
+.inner-page :is(h1, .page-section > h2, .service-row h2, .process-stage h2, .inner-cta h2,
+    #about-story h2, #about-team h2, #enquiry-form > h2,
+    .project-story h2, .project-specification h2, .project-closeups h2,
+    .project-title-row > p, .stage-number, .studio-numbers strong, .comparison-caption),
+body :is(#process .process-title, .portfolio-intro .section-title,
+    .testimonials .test-title, .testimonials .test-author, .testimonials .test-index-current,
+    .categories-grid .category-detail-title, .cta-banner .cta-accent) {
+  color:var(--ink);
+}
+footer .footer-top .footer-col-title,
+footer .footer-bottom > span:first-child { color:#c9c4bd; }
+
+.categories-grid .category-card .category-content .category-name {
+  font-size:clamp(32px, 5vw, 84px);
+  font-weight:200;
+  color:#fff;
+  text-shadow:0 1px 12px rgba(0,0,0,.55), 0 1px 3px rgba(0,0,0,.65);
+}
+.categories-grid .category-card .category-detail-title { font-weight:var(--heading-weight); }
+.categories-grid .category-card .category-content { border-bottom-color:rgba(255,255,255,.52); }
+.categories-grid .category-detail .category-spec-label,
+.testimonials .test-client,
+.inner-page :is(.page-jump, .process-stage, .studio-numbers, .values-grid article),
+.inner-page .project-specification :is(.spec-board, .spec-board-row, .spec-row-frame) {
+  border-color:var(--section-rule);
+}
+#process .step::after { background:var(--section-rule); }
+.inner-page .inner-cta:not(.has-motion-line),
+.cta-banner:not(.has-motion-line) { border-top:1px solid var(--strong-rule); }
+.inner-page .project-specification .fitting-item svg { stroke:var(--ink-mid); }
+
+/* Reflow the expanded quote once, without intermediate line breaks. */
+.testimonials .testimonial { transition:none; }
+.testimonials .testimonial .test-content { transition:none; }
+.testimonials .test-quote { overflow-wrap:break-word; }
+
+.categories-grid.has-expanded .category-card:not(.is-expanded) .category-name { color:#fff; }
+#about .about-accent { color:inherit; }
+.process-page .process-intro #process-title,
+#process.is-video-enhanced.has-video-backdrop .process-title { color:#fff; }
+
+body :is(.categories h2.section-title, .portfolio-intro h2.section-title,
+    #process h2.process-title, .testimonials h2.test-title) {
+  font:italic 200 clamp(26px, 3vw, 42px)/1.2 'Barlow', sans-serif;
+  letter-spacing:.01em;
+}
+
+.hero .hero-stat { border-top-color:var(--strong-rule); }
+
+#story .about-full-text { grid-column:1; }
+#story .story-description { grid-column:2; padding-top:48px; }
+#story .story-description p {
+  font:300 14px/1.9 'DM Sans', sans-serif;
+  color:#fff;
+  margin:0 0 24px;
+}
+#story .story-description .link-text { display:flex; }
+#projects .portfolio-intro .section-title { white-space:nowrap; }
+.cta-banner h2.cta-text { font-weight:200; }
+.project-facts > div::after { background:var(--section-rule); }
+
+@media(max-width:700px) {
+  #story .about-full-text,
+  #story .story-description { grid-column:1; }
+  #story .story-description { padding-top:0; }
 }

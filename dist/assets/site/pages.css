@@ -26,11 +26,12 @@
 }
 .services-page .service-row .mini-label {color:var(--cursor-accent)}
 .services-page :is(.services-filter-rule, .included-list li, .page-line-link) {
-  background-image:linear-gradient(var(--cursor-accent), var(--cursor-accent));
+  background-image:linear-gradient(var(--service-rule, var(--section-rule)), var(--service-rule, var(--section-rule)));
   background-size:100% 1px;
   background-position:left bottom;
   background-repeat:no-repeat;
 }
+.services-page .page-line-link { --service-rule:var(--cursor-accent); }
 .services-page .page-jump {border-top:0}
 .services-filter-rule {height:1px}
 .services-page .service-row :is(.included-list li, .page-line-link) {border-bottom:0}
@@ -260,7 +261,7 @@
   position: absolute;
   inset: 0 0 auto;
   height: 1px;
-  background: var(--cursor-accent);
+  background: var(--section-rule);
   transform-origin: left;
   pointer-events: none;
 }
