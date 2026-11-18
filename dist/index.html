@@ -6,7 +6,7 @@
 <title>DUBRA — Kuchyně & nábytek na míru</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,300;1,9..40,400&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,200;1,300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,300;1,9..40,400&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,500;1,600&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="assets/site/cursor.css">
 <style>
@@ -1190,6 +1190,7 @@ nav, nav a, nav button, .hero, .hero p, .hero a, .hero span, .hero button, .hero
     linear-gradient(90deg, rgba(18,15,13,.78), rgba(18,15,13,.53) 48%, rgba(18,15,13,.07)),
     var(--story-photo) center / cover no-repeat;
   scale:var(--story-photo-scale, 1);
+  transform:scaleX(-1);
   pointer-events:none;
 }
 #story .about-full-text p { color:#fff; }
@@ -1200,6 +1201,8 @@ nav, nav a, nav button, .hero, .hero p, .hero a, .hero span, .hero button, .hero
  #projects .portfolio-grid { margin-top:calc(-1 * var(--project-intro-height, 0px)); }
 }
 @media(max-width:700px) {
+ #projects .project-sticky { position:static; }
+ #projects .portfolio-grid { padding-bottom:0; }
  .project-sticky .portfolio-intro { max-width:none; }
 }
 #projects .project-sticky > .section-header > .link-text {
@@ -1617,7 +1620,8 @@ nav .nav-logo:focus-visible::before { opacity:0; }
 .process-approach .approach-cell-top { border-color:var(--cursor-accent); }
 #about .about-accent,
 #about .link-text,
-#story :is(h2, .link-text) { color:var(--cursor-accent); }
+#story .link-text { color:var(--cursor-accent); }
+#story .about-full-text h2 { color:#fff; }
 :is(#about, #story) .link-text { position:relative; border-bottom-color:transparent; }
 :is(#about, #story) .about-link-line {
   position:absolute; inset:auto 0 -1px;
@@ -2075,7 +2079,9 @@ nav .nav-logo:focus-visible::before { opacity:0; }
   <div class="story-photo" aria-hidden="true"></div>
   <div class="about-full-text">
     <p class="about-label" style="margin-bottom:16px;">Our story</p>
-    <h2>A studio built on craft, not catalogue</h2>
+    <h2 data-cs="Studio založené na řemesle">A studio built on craft,<br>not catalogue</h2>
+  </div>
+  <div class="story-description">
     <p>
       DUBRÁ Studio was founded with a single conviction: that the most important room in a home deserves more than a standard solution. Every project we take on is a collaboration — beginning with the architecture of the space and ending with the finest material detail.
     </p>
@@ -2478,14 +2484,20 @@ nav .nav-logo:focus-visible::before { opacity:0; }
   if (motion.matches || !window.IntersectionObserver || !about.animate) return;
 
   function splitWords(element, className = 'about-reveal-word') {
-    const parts = element.textContent.trim().split(/\s+/);
-    const words = parts.map(part => {
+    const parts = element.innerHTML.split(/<br\s*\/?>/i);
+    const words = [];
+    const lines = parts.map(part => {
+      const text = document.createElement('span');
+      text.innerHTML = part;
+      return text.textContent.trim().split(/\s+/).map(part => {
       const word = document.createElement('span');
       word.className = className;
       word.textContent = part;
+      words.push(word);
       return word;
+      }).flatMap((word, index) => index ? [' ', word] : [word]);
     });
-    element.replaceChildren(...words.flatMap((word, index) => index ? [' ', word] : [word]));
+    element.replaceChildren(...lines.flatMap((line, index) => index ? [document.createElement('br'), ...line] : line));
     return words;
   }
 
@@ -2579,10 +2591,9 @@ nav .nav-logo:focus-visible::before { opacity:0; }
   const reviewGroup = [];
   const reviewLabel = reviews.querySelector('.section-label');
   const reviewsTitle = reviews.querySelector('.test-title');
-  const reviewWords = splitWords(reviewsTitle);
   queue(reviewLabel, rise, 0, 450, reviewGroup);
-  reviewWords.forEach((word, index) => queue(word, rise, 380 + index * 105, 400, reviewGroup));
-  const cardsStart = 380 + (reviewWords.length - 1) * 105 + 400;
+  queue(reviewsTitle, rise, 260, 450, reviewGroup);
+  const cardsStart = 710;
   queue(reviews.querySelector('.test-grid'), stripFrames(8), cardsStart, 1250, reviewGroup);
 
   playOnVisible(reviewLabel, reviewGroup, reviews, { threshold:.2 });
@@ -2670,7 +2681,7 @@ nav .nav-logo:focus-visible::before { opacity:0; }
   }
   storyRise(story.querySelector('.about-label'), 480);
   storyWords(story.querySelector('h2'));
-  story.querySelectorAll('.about-full-text > p:not(.about-label)').forEach(paragraph => storyRise(paragraph, 580));
+  story.querySelectorAll('.story-description > p').forEach(paragraph => storyRise(paragraph, 580));
   storyWords(story.querySelector('.about-link-label'));
   queue(story.querySelector('.about-link-line'),
     [{ transform:'scaleX(0)' }, { transform:'scaleX(1)' }],
@@ -2833,7 +2844,7 @@ nav .nav-logo:focus-visible::before { opacity:0; }
 <script>
 (() => {
  function alignTeamLine() {
-  const link=document.querySelector('.about-full-text > .link-text');
+  const link=document.querySelector('#story .story-description > .link-text');
   const card=document.querySelector('.portfolio-grid .portfolio-card:nth-of-type(3)');
   if(!link||!card)return;
   const mobile=matchMedia('(max-width:700px)').matches;
